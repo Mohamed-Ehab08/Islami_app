@@ -17,4 +17,9 @@ class AppStyles {
     fontWeight: FontWeight.bold,
     color: AppColors.WhiteColor,
   );
+  static const TextStyle black20bold = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: AppColors.bgColor,
+  );
 }
