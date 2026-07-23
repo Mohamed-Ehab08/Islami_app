@@ -11,4 +11,8 @@ class AppImages {
   static const String sebhaIcon = 'assets/images/ic_sebha.png';
   static const String radioIcon = 'assets/images/ic_radio.png';
   static const String timeIcon = 'assets/images/ic_time.png';
+
+  static const String SebhaBg = 'assets/images/SebhaBackground.png';
+  static const String SebhaBody = 'assets/images/SebhaBody1.png';
+  static const String Sebhahead = 'assets/images/Maskgroup.png';
 }

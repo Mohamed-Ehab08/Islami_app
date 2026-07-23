@@ -12,4 +12,9 @@ class AppStyles {
     fontWeight: FontWeight.bold,
     color: AppColors.primaryColor,
   );
+  static const TextStyle white36bold = TextStyle(
+    fontSize: 36,
+    fontWeight: FontWeight.bold,
+    color: AppColors.WhiteColor,
+  );
 }
