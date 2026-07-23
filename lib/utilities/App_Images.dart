@@ -15,4 +15,7 @@ class AppImages {
   static const String SebhaBg = 'assets/images/SebhaBackground.png';
   static const String SebhaBody = 'assets/images/SebhaBody1.png';
   static const String Sebhahead = 'assets/images/Maskgroup.png';
+
+  static const String RadioBg = 'assets/images/RadioBackground.png';
+  static const String ContRadioBg = 'assets/images/BgRadioCont.png';
 }
