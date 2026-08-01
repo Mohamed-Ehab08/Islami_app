@@ -16,12 +16,32 @@ class Homescreen extends StatefulWidget {
 
 class _HomescreenState extends State<Homescreen> {
   List<Widget> Tabs = [Quran(), Hadeth(), Sebha(), RadioTab(), Time()];
+  List<String> Images = [AppImages.QuranBg, AppImages.QuranBg,
+    AppImages.SebhaBg, AppImages.RadioBg, AppImages.QuranBg
+  ];
   int selected_index = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Tabs[selected_index],
+      body: Stack(
+        children: [
+          Image.asset(Images[selected_index],
+              fit: BoxFit.fill,
+              height: double.infinity,
+              width: double.infinity),
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: Column(
+              children: [
+                Image.asset(AppImages.IslamiLogo),
+                Expanded(child: Tabs[selected_index])
+              ],
+            ),
+          )
+        ],
+      ),
+
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selected_index,

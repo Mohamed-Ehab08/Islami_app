@@ -17,22 +17,12 @@ class _SebhaState extends State<Sebha> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Image.asset(
-          AppImages.SebhaBg,
-          width: double.infinity,
-          fit: BoxFit.fill,
-          height: double.infinity,
-        ),
-
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
           child: Column(
             spacing: 10,
             children: [
-              Image.asset(AppImages.IslamiLogo),
-              Text(
+          Text(
                 AppStrings.SebhaTitle,
                 style: AppStyles.white36bold,
                 textAlign: TextAlign.center,
@@ -73,8 +63,6 @@ class _SebhaState extends State<Sebha> {
               ),
             ],
           ),
-        ),
-      ],
     );
   }
 }
