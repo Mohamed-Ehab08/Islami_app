@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islami_app/Providers/Most_Recent_provider.dart';
 import 'package:islami_app/utilities/App_Colors.dart';
 import 'package:islami_app/utilities/App_Images.dart';
 import 'package:islami_app/utilities/App_lists.dart';
 import 'package:islami_app/utilities/App_styles.dart';
+import 'package:provider/provider.dart';
 
 class SuraDetails extends StatefulWidget {
   SuraDetails({super.key});
@@ -16,11 +18,13 @@ class _SuraDetailsState extends State<SuraDetails> {
   List<String> verses = [];
   String verses2 = '';
   bool type = false;
+  late var mostRecentProvider;
 
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
+    mostRecentProvider = Provider.of<MostRecentProvider>(context);
     int count = ModalRoute.of(context)?.settings.arguments as int;
     if (verses.isEmpty && verses2.isEmpty) LoadSura(count);
     return Scaffold(
@@ -133,5 +137,12 @@ class _SuraDetailsState extends State<SuraDetails> {
       print(verses2);
     }
     setState(() {});
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    mostRecentProvider.ReadMostRecent();
   }
 }

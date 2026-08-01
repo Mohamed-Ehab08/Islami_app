@@ -37,7 +37,7 @@ class _HadethItemState extends State<HadethItem> {
             child: Container(
               margin: EdgeInsetsGeometry.symmetric(
                 vertical: height * 0.02,
-                horizontal: width * 0.02,
+                //horizontal: width * 0.02,
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
