@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/Screens/HomeScreen.dart';
 import 'package:islami_app/Screens/Intro_screen.dart';
+import 'package:islami_app/Screens/tabs/hadeth/Hadith_details.dart';
 import 'package:islami_app/Screens/tabs/quruan/Sura_details.dart';
 import 'package:islami_app/utilities/App_Routes.dart';
 
@@ -15,11 +16,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.IntroScreenRoute,
+      initialRoute: AppRoutes.HomeScreenRoute,
       routes: {
         AppRoutes.HomeScreenRoute: (context) => Homescreen(),
         AppRoutes.IntroScreenRoute: (context) => IntroScreen(),
-        AppRoutes.SuraDetailsRoute: (context) => SuraDetails()
+        AppRoutes.SuraDetailsRoute: (context) => SuraDetails(),
+        AppRoutes.HadithDetailsRoute: (context) => HadithDetails(),
       },
     );
   }

@@ -16,7 +16,7 @@ class Homescreen extends StatefulWidget {
 
 class _HomescreenState extends State<Homescreen> {
   List<Widget> Tabs = [Quran(), Hadeth(), Sebha(), RadioTab(), Time()];
-  List<String> Images = [AppImages.QuranBg, AppImages.QuranBg,
+  List<String> Images = [AppImages.QuranBg, AppImages.HadithBg,
     AppImages.SebhaBg, AppImages.RadioBg, AppImages.QuranBg
   ];
   int selected_index = 0;
@@ -44,7 +44,8 @@ class _HomescreenState extends State<Homescreen> {
 
 
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: selected_index,
+
+      currentIndex: selected_index,
         backgroundColor: AppColors.primaryColor,
         type: BottomNavigationBarType.fixed,
         onTap: (index) {
@@ -65,6 +66,7 @@ class _HomescreenState extends State<Homescreen> {
         selectedItemColor: AppColors.WhiteColor,
         unselectedItemColor: AppColors.bgColor,
         showUnselectedLabels: false,
+
       ),
     );
   }
