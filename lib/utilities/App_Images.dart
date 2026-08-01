@@ -1,0 +1,31 @@
+class AppImages {
+  static const String IslamiLogo = 'assets/images/LogoIntro.png';
+  static const String Intro1Logo = 'assets/images/intro1.png';
+  static const String Intro2Logo = 'assets/images/Intro2.png';
+  static const String Intro3Logo = 'assets/images/Intro3.png';
+  static const String Intro4Logo = 'assets/images/Intro4.png';
+  static const String Intro5Logo = 'assets/images/Intro5.png';
+
+  static const String QuranIcon = 'assets/images/QuranIcon.png';
+  static const String hadeethIcon = 'assets/images/ic_hadeth.png';
+  static const String sebhaIcon = 'assets/images/ic_sebha.png';
+  static const String radioIcon = 'assets/images/ic_radio.png';
+  static const String timeIcon = 'assets/images/ic_time.png';
+
+  static const String SebhaBg = 'assets/images/SebhaBackground.png';
+  static const String SebhaBody = 'assets/images/SebhaBody1.png';
+  static const String Sebhahead = 'assets/images/Maskgroup.png';
+
+  static const String RadioBg = 'assets/images/RadioBackground.png';
+  static const String ContRadioBg = 'assets/images/BgRadioCont.png';
+
+  static const String QuranBg = 'assets/images/QuranBackground.png';
+  static const String RecentBg = 'assets/images/img_most_recent.png';
+  static const String Vector = 'assets/images/Vector.png';
+
+  static const String SursRightDec = 'assets/images/img_right_corner.png';
+  static const String SursLeftDec = 'assets/images/img_left_corner.png';
+  static const String SursBottomDec = 'assets/images/img_bottom_decoration.png';
+
+  static const String HadithBg = 'assets/images/HadithBackground.png';
+}
