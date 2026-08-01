@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/Screens/widgets/CustomContainer.dart';
 import 'package:islami_app/utilities/App_Colors.dart';
-import 'package:islami_app/utilities/App_Images.dart';
 import 'package:islami_app/utilities/App_Strings.dart';
 import 'package:segmented_button_slide/segmented_button_slide.dart';
 
@@ -31,19 +30,14 @@ class _RadioTabState extends State<RadioTab> {
   int _selected = 0;
   @override
   Widget build(BuildContext context) {
-    return Stack(
-
-      children: [
-        Image.asset(AppImages.RadioBg,
-          width: double.infinity, fit: BoxFit.fill, height: double.infinity,),
-
+    return
         SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
               //spacing: 10,
               children: [
-                Image.asset(AppImages.IslamiLogo),
+
 
                 SegmentedButtonSlide(
                   entries: const [
@@ -107,8 +101,6 @@ class _RadioTabState extends State<RadioTab> {
               ],
             ),
           ),
-        )
-      ],
-    );
+        );
   }
 }

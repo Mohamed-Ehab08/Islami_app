@@ -18,4 +18,12 @@ class AppImages {
 
   static const String RadioBg = 'assets/images/RadioBackground.png';
   static const String ContRadioBg = 'assets/images/BgRadioCont.png';
+
+  static const String QuranBg = 'assets/images/QuranBackground.png';
+  static const String RecentBg = 'assets/images/img_most_recent.png';
+  static const String Vector = 'assets/images/Vector.png';
+
+  static const String SursRightDec = 'assets/images/img_right_corner.png';
+  static const String SursLeftDec = 'assets/images/img_left_corner.png';
+  static const String SursBottomDec = 'assets/images/img_bottom_decoration.png';
 }

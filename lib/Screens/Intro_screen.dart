@@ -39,17 +39,6 @@ class IntroScreen extends StatelessWidget {
       ),
 
 
-      // globalFooter: SizedBox(
-      //   width: double.infinity,
-      //   height: 60,
-      //   child: ElevatedButton(
-      //     child: const Text(
-      //       'Finish',
-      //       style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-      //     ),
-      //     onPressed: () => Navigator.of(context).pushReplacementNamed(AppRoutes.HomeScreenRoute),
-      //   ),
-      // ),
       pages: [
         PageViewModel(
           title: "Welcome To Islmi App",
